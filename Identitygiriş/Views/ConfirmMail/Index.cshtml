@@ -1,0 +1,33 @@
+﻿@model confirmviewmodel
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<div class="container">
+<form mothod="post">
+
+
+        <h2> taşınan meil adresi : @TempData["Mail"]</h2>
+    <label>ID değerini  </label>
+
+  
+    <br />
+   
+
+        <br />
+        <br />
+       
+        <br />
+        <label>meil adresinize gelen 6 haneli kodu girin  </label>
+        <input type="text" class="form-control" name="confirmCode" asp-for="confirmCode" />
+
+    <br />
+    <button class="btn btn-primary"> kodu doğrula</button>
+
+
+
+</form>
+</div>
+
